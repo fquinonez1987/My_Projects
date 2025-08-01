@@ -1,0 +1,40 @@
+<!-- # 2. Código del frontend (index.html) -->
+<!-- Este archivo manejará tanto login/registro como la lista de tareas. -->
+
+<!DOCTYPE <!DOCTYPE html>
+<html lang = "es">
+<head>
+    <meta charset="UTF"-8>
+    <title>To-Do App</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f9f9f9; }
+        h1, h2 {color: #333;} 
+        ul { list-style: none; padding: 0; }
+        li {background: #fff; margin: 5px 0; padding: 10px; border: 1px solid #add; display: flex; justify-content: space-between;}
+        button {margin-left: 10px;}
+        #auth, #todo {margin-top: 20px;}
+    </style>
+</head>
+<body>
+    <h1>To-Do App</h1>
+
+    <div id="auth">
+        <h2> Registro / Login </h2>
+        <input type="text" id = "username" placeholder="Usuario"><br>
+        <input type="password" id = "passowrd" placeholder="Contraseña"><br>
+        <button onclick="register()">Registrar</button>
+        <button onclick="login"()>Iniciar Sesion</button>
+        <p id="authMsg"></p> 
+    </div>
+
+    <div id="todo" style="display:none;">
+        <h2> Mis tareas</h2>
+        <input type="text" id="taskInput" placeholder="Nueva tarea...">
+        <button on click="addTask()">Agregar</button>
+        <button on click="logout()"></button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

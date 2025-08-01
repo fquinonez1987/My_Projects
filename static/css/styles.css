@@ -1,0 +1,35 @@
+/* estilos.css */
+
+body {
+    background-color: #f4f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #343a40;
+}
+
+table {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.btn-group form {
+    display: inline;
+}
+
+.navbar-brand img {
+    border-radius: 50%; /* si quieres que el logo sea circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* un leve sombreado */
+}
+
+
+input.form-control:focus,
+button.btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
